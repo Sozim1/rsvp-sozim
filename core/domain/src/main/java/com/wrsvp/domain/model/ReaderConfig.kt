@@ -1,0 +1,25 @@
+package com.wrsvp.domain.model
+
+data class ReaderConfig(
+    val defaultWpm: Int = 300,
+    val minWpm: Int = 100,
+    val maxWpm: Int = 900,
+    val wpmStep: Int = 25,
+    val fontSizeSmallSp: Int = 24,
+    val fontSizeMediumSp: Int = 32,
+    val fontSizeLargeSp: Int = 42,
+    val fontSizeExtraLargeSp: Int = 52,
+    val sentencePauseMs: Long = 350,
+    val commaPauseMs: Long = 180,
+    val colonPauseMs: Long = 220,
+    val longWordThreshold: Int = 9,
+    val longWordExtraMsPerChar: Long = 12,
+    val complexWordExtraMs: Long = 80,
+    val anchorDefaultRatio: Double = 0.42,
+    val autoSaveProgressEveryWords: Int = 10,
+    val autoSyncProgressEverySeconds: Int = 30,
+    val maxBookSizeOnWatchMb: Int = 50,
+    val chunkSizeForTransferBytes: Int = 256 * 1024,
+    val acceptedFileTypes: Set<String> = setOf("txt", "md", "markdown", "html", "htm", "xhtml", "epub"),
+    val internalBookFormatVersion: Int = 1,
+)

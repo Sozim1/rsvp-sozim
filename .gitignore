@@ -1,0 +1,45 @@
+.gradle/
+build/
+**/build/
+local.properties
+.idea/
+*.iml
+captures/
+*.apk
+*.aab
+**/bin/
+
+# Local Codex / Kotlin diagnostics
+.codex/
+.kotlin/
+
+# Local screenshots and QA captures
+screenshots/
+docs/screenshots/
+
+# Internal working notes, not public repo docs
+docs/explicacao-do-sistema.md
+docs/SCREENSHOTS.md
+docs/gemini-canvas-watch-ux-brief.md
+tools/capture_watch_screenshots.ps1
+
+# Do not publish user-provided books or copyrighted reading samples
+apps/watch/src/main/assets/books/*.epub
+apps/watch/src/main/assets/books/*.pdf
+apps/watch/src/main/assets/books/*.txt
+apps/watch/src/main/assets/books/*.md
+apps/watch/src/main/assets/books/*.html
+
+# Android / JVM local artifacts
+.externalNativeBuild/
+.cxx/
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.b64
+*.hprof
+
+# Local OS/editor noise
+.DS_Store
+Thumbs.db
